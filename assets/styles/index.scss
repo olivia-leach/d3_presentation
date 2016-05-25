@@ -1,2 +1,54 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+body, html {
+  font: 14px calibri;
+  background-color: black;
+  color: white;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #fff;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 4px;
+  opacity: 0.4;
+  z-index: 100;
+}
+
+div.tooltip {
+  position: absolute;
+  color: white;
+  text-align: center;
+  padding: 4px 10px;
+  font: 16px calibri;
+  background: rgba(0,0,0,0.7);
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+  font-weight: normal;
+}
+
+.area {
+  opacity: 0.5;
+  z-index: -5;
+}
+
+.active {
+  opacity: 0.8;
+  // z-index: 1000;
+}
+
+.invisible {
+  opacity: 0;
+}
